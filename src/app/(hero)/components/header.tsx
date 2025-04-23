@@ -20,27 +20,26 @@ export default function Header() {
     const pathname = usePathname()
 
     return(
-<div>
-
-    {/*Top header*/}
-    <div className={`topHeader TODO:social media icon need link`}>
-        <div className='bg-[#EB1E1A] flex gap-50 container mx-auto h-[30px] '>
-            <div className='text-white text-[12px] mt-1.5 ml-30'> 9030 Leslie St Unit 4, Richmond Hill, ON L4B 1G2</div>
-            <div className='text-white text-[12px] mt-1.5'> info@ywialliance.com | 客服电话：(647) 495-6888</div>
-            <div className='mt-1  space-x-6'>
-                <WhatsAppOutlined style={{fontSize: '16px', color: 'white'}}></WhatsAppOutlined>
-                <WechatOutlined style={{fontSize: '16px', color: 'white'}}></WechatOutlined>
+        <div>
+            {/*Top header*/}
+            <div className={`topHeader TODO:social media icon need link`}>
+            <div className='bg-[#EB1E1A] flex gap-50 container mx-auto h-[30px] w-[1333px] '>
+                <div className='text-white text-[12px] mt-1.5 ml-30'> 9030 Leslie St Unit 4, Richmond Hill, ON L4B 1G2</div>
+                <div className='text-white text-[12px] mt-1.5'> info@ywialliance.com | 客服电话：(647) 495-6888</div>
+                <div className='mt-1  space-x-6'>
+                    <WhatsAppOutlined style={{fontSize: '16px', color: 'white'}}></WhatsAppOutlined>
+                    <WechatOutlined style={{fontSize: '16px', color: 'white'}}></WechatOutlined>
+                </div>
             </div>
         </div>
-    </div>
 
 
     {/*nav bar*/}
-
-    <div className='navBar h-[90px]  bg-[#F7F9FE] container mx-auto flex'>
+    <div className='navBar h-[90px]  bg-[#F7F9FE] container mx-auto flex w-[1333px]'>
         <div className='ml-28 mt-4'>
             <Image src={logo} alt={'logo'}></Image>
         </div>
+
         {// generation processing of navigation bar
             linkData.map((link) => (
                 <Link key={link.path}
