@@ -1,5 +1,4 @@
 'use client'
-
 import React from 'react'
 import {Avatar, List} from "antd";
 import {data} from "@/app/mock/data";

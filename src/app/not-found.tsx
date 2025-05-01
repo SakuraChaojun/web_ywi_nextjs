@@ -9,7 +9,7 @@ import Link from "next/link";
                     <div className="text-5xl font-dark font-bold">404</div>
                     <p
                         className="text-2xl md:text-3xl font-light leading-normal"
-                    >Sorry we couldn't find this page. </p>
+                    >Sorry we couldn&#39;t find this page. </p>
 
 
                     <Link href='/'

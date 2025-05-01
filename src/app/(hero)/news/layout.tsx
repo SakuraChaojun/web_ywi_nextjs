@@ -1,4 +1,3 @@
-"use client"
 import "../../globals.css"
 import React from 'react';
 
@@ -11,7 +10,7 @@ export default function NewsLayout({
 
     return (
         <>
-            <div className='max-w-xl mx-auto mt-10'>
+            <div className='max-w-xl mx-auto mt-10 '>
                 {children}</div>
 
         </>
