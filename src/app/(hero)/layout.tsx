@@ -11,9 +11,9 @@ export default function RootLayout({
 }>) {
 
   return (
-    <>
+    <div className='mx-auto'>
         <Header/>
         {children}
-    </>
+    </div>
   );
 }

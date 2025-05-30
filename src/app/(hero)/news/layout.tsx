@@ -10,7 +10,7 @@ export default function NewsLayout({
 
     return (
         <>
-            <div className='max-w-xl mx-auto mt-10 '>
+            <div className='mx-auto mt-10 max-w-xl'>
                 {children}</div>
 
         </>

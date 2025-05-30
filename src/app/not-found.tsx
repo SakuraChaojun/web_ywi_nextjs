@@ -3,17 +3,17 @@ import Link from "next/link";
 
     export default function NotFound() {
         return(
-        <div className="h-screen w-screen  flex items-center not-found container mx-auto">
-            <div className="container flex flex-col md:flex-row items-center justify-center px-5 text-gray-700">
-                <div className="max-w-md flex flex-col gap-6">
-                    <div className="text-5xl font-dark font-bold">404</div>
+        <div className="container mx-auto flex h-screen w-screen items-center not-found">
+            <div className="container flex flex-col items-center justify-center px-5 text-gray-700 md:flex-row">
+                <div className="flex max-w-md flex-col gap-6">
+                    <div className="text-5xl font-bold font-dark">404</div>
                     <p
-                        className="text-2xl md:text-3xl font-light leading-normal"
+                        className="text-2xl font-light leading-normal md:text-3xl"
                     >Sorry we couldn&#39;t find this page. </p>
 
 
                     <Link href='/'
-                        className="text-center px-4 inline py-2 text-sm font-medium leading-5 shadow text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none focus:shadow-outline-blue bg-red-600 active:bg-red-600 hover:bg-red-700">Back
+                        className="inline rounded-lg border border-transparent bg-red-600 px-4 py-2 text-center text-sm font-medium leading-5 text-white shadow transition-colors duration-150 hover:bg-red-700 focus:shadow-outline-blue focus:outline-none active:bg-red-600">Back
                         to homepage
                     </Link>
                 </div>
