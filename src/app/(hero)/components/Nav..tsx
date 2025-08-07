@@ -22,12 +22,18 @@ export default function Nav() {
 
     return (
 
-        <div className=' bg-[#F7F9FE] w-full '>
+        <div className=' bg-[#F7F9FE]  '>
 
-            <div className='flex h-20 w-10/12'>
+            <div className='md:hidden bg-[#F7F9FE] w-1/2 h-16 duration-300'>
 
-                <div className='mt-4 ml-28 '>
-                    <Image src={logo} alt={'logo'}></Image>
+            </div>
+
+            <div className=' hidden md:flex md:h-20  md:w-10/12 md:mx-auto  duration-300'>
+
+                <div className='mt-4  '>
+                    <Image className='cursor-pointer' src={logo} alt={'logo'}
+                           onClick={()=>window.location.replace('/')}>
+                    </Image>
                 </div>
 
                 {// generation processing of navigation bar
@@ -43,7 +49,7 @@ export default function Nav() {
                 </div>
 
                 {/* icon */}
-                <div className={`$ ml-15 mt-8 pl-5`}>
+                <div className={`$ ml-15 mt-8 `}>
                     <SearchOutlined className='mr-15' style={{fontSize: '16px'}}></SearchOutlined>
                     <TranslationOutlined style={{fontSize: '16px'}}></TranslationOutlined>
                 </div>

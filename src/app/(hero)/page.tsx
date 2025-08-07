@@ -2,7 +2,7 @@ import Image from "next/image";
 import banner from '@/app/(hero)/assets/sl-aslog.jpg'
 import {Button} from 'antd'
 import {Metadata} from "next";
-import Tools from "@/app/(hero)/components/tools";
+import Tools from "@/app/(hero)/components/Tools";
 
 
 export const metadata: Metadata = {
